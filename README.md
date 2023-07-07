@@ -1,4 +1,4 @@
-# Automated Skew Analysis powered by pyAEDT v0.1
+# Automated Skew Analysis powered by pyAEDT - v0.1
 
 ## Pre-requisites
 
