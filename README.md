@@ -1,5 +1,7 @@
 # Automated Skew Analysis powered by pyAEDT - v0.1
 
+This is an alpha functional version that allows the user to select a S-parameters model extracted from Ansys SIwave or HFSS containing transmission lines and automatically add drivers and receivers and run a transient analysis using Nexxim. Then, it will automatically create Delay and Skew tables between the different nets.
+
 ## Pre-requisites
 
 `PyAEDT` - more information about it [here](https://github.com/ansys/pyaedt)
