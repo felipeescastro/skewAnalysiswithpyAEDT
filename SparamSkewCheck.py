@@ -7,6 +7,10 @@ diffPairSuffix_pos = '_t'
 diffPairSuffix_neg = '_c'
 drv_datarate='3.2GHz'
 
+desktop_version = "2023.1"
+non_graphical = False
+new_thread = True
+
 # =======================================================================================================================
 # ============================================== Code starts here: ======================================================
 # =======================================================================================================================
@@ -14,10 +18,6 @@ drv_datarate='3.2GHz'
 import pyaedt
 import os
 from itertools import permutations as perm
-
-desktop_version = "2023.1"
-non_graphical = False
-new_thread = True
 
 aedt_file_name = os.path.join(os.path.dirname(inputSparam),'SkewCheck.aedt')
 aedb_folder = os.path.join(os.path.dirname(inputSparam),'SkewCheck.aedb')
@@ -233,5 +233,5 @@ new_report_dt.create()
 
 circ.analyze_setup("MyTransient")
 
-# circ.save_project()
-# desktop.release_desktop(True,True)
+circ.save_project()
+desktop.release_desktop(True,True)
